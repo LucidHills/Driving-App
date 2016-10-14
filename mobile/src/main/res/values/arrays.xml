@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accel">
+        <item>X: </item>
+        <item>\nY: </item>
+        <item>\nZ: </item>
+    </string-array>
+    <string-array name="loc">
+        <item>\nLatitude: </item>
+        <item>\nLongitude: </item>
+    </string-array>
+</resources>

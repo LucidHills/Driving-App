@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Application Project</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="gps">GPS:</string>
+    <string name="latitude">Latitude:\n</string>
+    <string name="longitude">Longitude:\n</string>
+    <string name="acceleration">acceleration:\n</string>
+</resources>
