@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_gps_category_title">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="gps_enable_preference"
+            android:title="@string/pref_gps_enable_title"
+            android:dialogTitle="@string/pref_gps_enable_title"
+            android:summaryOn="@string/pref_gps_enable_summary_on"
+            android:summaryOff="@string/pref_gps_enable_summary_off" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_bluetooth_category_title">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="bluetooth_enable_preference"
+            android:title="@string/pref_bluetooth_enable_title"
+            android:dialogTitle="@string/pref_bluetooth_enable_title"
+            android:summaryOn="@string/pref_bluetooth_enable_summary_on"
+            android:summaryOff="@string/pref_bluetooth_enable_summary_off" />
+        <ListPreference
+            android:key="bluetooth_list_preference"
+            android:dependency="bluetooth_enable_preference"
+            android:title="@string/pref_bluetooth_list_title"
+            android:dialogTitle="@string/pref_bluetooth_list_title"
+            android:summary="@string/pref_bluetooth_list_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_obd_category_title"
+        android:dependency="bluetooth_enable_preference">
+        <ListPreference
+            android:defaultValue="AUTO"
+            android:key="obd_protocols_list_preference"
+            android:title="@string/pref_obd_protocols_title"
+            android:dialogTitle="@string/pref_obd_protocols_title"
+            android:summary="@string/pref_obd_protocols_summary" />
+        <PreferenceScreen
+            android:key="obd_commands_screen"
+            android:title="@string/pref_obd_commands_title"
+            android:summary="@string/pref_obd_commands_summary" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="imperial_units_preference"
+            android:title="@string/pref_imperial_units_title"
+            android:dialogTitle="@string/pref_imperial_units_title"
+            android:summaryOn="@string/pref_imperial_units_summary_on"
+            android:summaryOff="@string/pref_imperial_units_summary_off" />
+        <EditTextPreference
+            android:defaultValue="4"
+            android:key="obd_update_period_preference"
+            android:title="@string/pref_obd_update_period_title"
+            android:dialogTitle="@string/pref_obd_update_period_title"
+            android:summary="@string/pref_obd_update_period_summary" />
+        <EditTextPreference
+            android:defaultValue="70"
+            android:key="obd_max_fuel_economy_preference"
+            android:title="@string/pref_obd_max_fuel_economy_title"
+            android:dialogTitle="@string/pref_obd_max_fuel_economy_title"
+            android:summary="@string/pref_obd_max_fuel_economy_summary" />
+        <EditTextPreference
+            android:defaultValue=".85"
+            android:key="obd_volumetric_efficiency_preference"
+            android:title="@string/pref_obd_volumetric_efficiency_title"
+            android:dialogTitle="@string/pref_obd_volumetric_efficiency_dialog_title"
+            android:summary="@string/pref_obd_volumetric_efficiency_summary" />
+        <EditTextPreference
+            android:defaultValue="1.6"
+            android:key="obd_engine_displacement_preference"
+            android:title="@string/pref_obd_engine_displacement_title"
+            android:dialogTitle="@string/pref_obd_engine_displacement_title"
+            android:summary="@string/pref_obd_engine_displacement_summary" />
+        <EditTextPreference
+            android:defaultValue="atsp0\natz"
+            android:key="obd_reader_config_preference"
+            android:title="@string/pref_obd_reader_config_title"
+            android:dialogTitle="@string/pref_obd_reader_config_title"
+            android:summary="@string/pref_obd_reader_config_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

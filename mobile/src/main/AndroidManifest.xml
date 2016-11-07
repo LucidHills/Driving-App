@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -12,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="user">
@@ -23,10 +27,26 @@
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.ChartActivity"
+            android:launchMode="singleInstance"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity
+            android:name=".activity.Settings"
+            android:launchMode="singleInstance"
+            android:label="@string/app_name">
+
+        </activity>
+
+        <service
+            android:name=".io.ObdService"
+            android:launchMode="singleInstance"
+            android:exported="false" />
 
         <!-- Android Auto -->
         <meta-data
@@ -38,12 +58,13 @@
          MediaBrowser (for browsing) and MediaController (for playback control)
         -->
         <service
-            android:name=".CarService"
+            android:name=".unused.auto.CarService"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService"/>
             </intent-filter>
         </service>
+
     </application>
 
 </manifest>

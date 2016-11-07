@@ -1,9 +1,82 @@
 <resources>
     <string name="app_name">Application Project</string>
+
+    <!-- Menu -->
     <string name="action_settings">Settings</string>
+    <string name="action_start">Start live data</string>
+    <string name="action_stop">Stop live data</string>
+    <string name="action_bluetooth">Bluetooth</string>
+    <string name="action_bluetooth_enable">Enable</string>
+    <string name="action_bluetooth_disable">Disable</string>
+    <string name="action_bluetooth_discovery">Scan for devices</string>
+    <string name="action_bluetooth_discovering">Searching…</string>
+    <string name="action_bluetooth_connect">Select Device</string>
+
+
+    <string name="action_screens">Screens</string>
+    <string name="action_drag_fragment">DragView Fragment</string>
+    <string name="action_debug_screen">Raw Output Screen</string>
+    <string name="action_chart">Chart demo</string>
+    <string name="action_obd_one">OBD UI Screen 1</string>
+    <string name="action_obd_two">OBD UI Screen 2</string>
+    <string name="action_obd_three">OBD UI Screen 3</string>
+
 
     <string name="gps">GPS:</string>
     <string name="latitude">Latitude:\n</string>
     <string name="longitude">Longitude:\n</string>
     <string name="acceleration">acceleration:\n</string>
+
+
+    <string name="bluetooth_no_device">No Bluetooth device selected</string>
+    <string name="bluetooth_no_devices">No Bluetooth devices found</string>
+    <string name="text_bluetooth_disabled">Bluetooth is required to use OBD</string>
+
+
+    <!-- Bluetooth preferences -->
+    <string name="pref_bluetooth_category_title">Bluetooth</string>
+    <string name="pref_bluetooth_enable_title">Enable Bluetooth</string>
+    <string name="pref_bluetooth_enable_summary_off">Turn on Bluetooth</string>
+    <string name="pref_bluetooth_enable_summary_on">Turn off Bluetooth</string>
+    <string name="pref_bluetooth_list_title">Bluetooth Device</string>
+    <string name="pref_bluetooth_list_summary">Select which Bluetooth Device to connect with</string>
+    <!-- GPS preferences -->
+    <string name="pref_gps_category_title">GPS</string>
+    <string name="pref_gps_enable_title">Enable GPS</string>
+    <string name="pref_gps_enable_summary_off">Turn on GPS</string>
+    <string name="pref_gps_enable_summary_on">Turn off GPS</string>
+    <!-- OBD preferences -->
+    <string name="pref_obd_category_title">OBD Preferences</string>
+    <string name="pref_obd_protocols_title">OBD Protocol</string>
+    <string name="pref_obd_protocols_summary">Select which OBD Protocol to use</string>
+    <string name="pref_obd_commands_title">OBD Commands</string>
+    <string name="pref_obd_commands_summary">Select the commands you would like to see in real-time.</string>
+    <string name="pref_imperial_units_title">Imperial Units</string>
+    <string name="pref_imperial_units_summary_off">Enable imperial units</string>
+    <string name="pref_imperial_units_summary_on">Go back to metric units</string>
+    <string name="pref_obd_update_period_title">Update Period in Seconds</string>
+    <string name="pref_obd_update_period_summary">Time to wait between updates</string>
+    <string name="pref_obd_max_fuel_economy_title">Maximum Fuel Economy Value</string>
+    <string name="pref_obd_max_fuel_economy_summary">Higher fuel economy values will be discarded</string>
+    <string name="pref_obd_volumetric_efficiency_title">Volumetric Efficiency</string>
+    <string name="pref_obd_volumetric_efficiency_dialog_title">Volumetric Efficiency (eg 0.85)</string>
+    <string name="pref_obd_volumetric_efficiency_summary">Used for fuel economy on vehicles without MAF sensor</string>
+    <string name="pref_obd_engine_displacement_title">Engine Displacement (liters)</string>
+    <string name="pref_obd_engine_displacement_summary">Used for fuel economy on vehicles without MAF sensor</string>
+    <string name="pref_obd_reader_config_title">Reader Config Commands</string>
+    <string name="pref_obd_reader_config_summary">Commands to configure bluetooth reader\nSeparate each command with a new line</string>
+
+    <!-- Bluetooth / OBD connectivity statuses -->
+    <string name="status_ready">ready</string>
+    <string name="status_receiving">receiving data…</string>
+    <string name="status_discovering">discovering…</string>
+    <string name="status_initialising">initialising…</string>
+    <string name="status_enabled">enabled</string>
+    <string name="status_disabled">disabled</string>
+    <string name="status_connecting">connecting…</string>
+    <string name="status_connected">connected</string>
+    <string name="status_disconnecting">disconnecting…</string>
+    <string name="status_disconnected">disconnected</string>
+
+
 </resources>

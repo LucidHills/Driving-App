@@ -9,4 +9,13 @@
         <item>\nLatitude: </item>
         <item>\nLongitude: </item>
     </string-array>
+    <string-array name="context_menu_drag_view">
+        <item>Change Style</item>
+        <item>Change Command</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="context_menu_drag_root">
+        <item>Add new Command</item>
+        <item>Delete All</item>
+    </string-array>
 </resources>

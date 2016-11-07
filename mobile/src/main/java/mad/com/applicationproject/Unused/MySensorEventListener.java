@@ -1,10 +1,12 @@
-package mad.com.applicationproject;
+package mad.com.applicationproject.unused;
 
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.util.Log;
+
+import mad.com.applicationproject.activity.MainActivity;
 
 /**
  *

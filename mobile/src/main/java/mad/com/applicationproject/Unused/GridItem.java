@@ -1,4 +1,4 @@
-package mad.com.applicationproject;
+package mad.com.applicationproject.unused;
 
 public class GridItem {
     String mName;

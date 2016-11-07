@@ -4,34 +4,40 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:background="@color/colorAccent">
+    android:layout_margin="5dp"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_gravity="fill">
 
     <TextView
-        android:id="@+id/text_view"
+        android:id="@+id/bt_status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:text="ITEM"
-        android:gravity="center"/>
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="ITEM"/>
 
     <Button
         android:id="@+id/delete_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Delete"/>
 
     <Button
         android:id="@+id/wider_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Wider"/>
 
     <Button
         android:id="@+id/taller_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Taller"/>
 </LinearLayout>

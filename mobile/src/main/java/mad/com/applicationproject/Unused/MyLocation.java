@@ -1,4 +1,4 @@
-package mad.com.applicationproject;
+package mad.com.applicationproject.unused;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,6 +16,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+
+import mad.com.applicationproject.activity.MainActivity;
 
 
 public class MyLocation extends MainActivity implements GoogleApiClient.ConnectionCallbacks,
@@ -160,7 +162,7 @@ public class MyLocation extends MainActivity implements GoogleApiClient.Connecti
         Log.v(TAG, "updateLocation() called.");
         mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
         if (mLastLocation != null) {
-            displayLocation(mContext, mLastLocation);
+            //displayLocation(mContext, mLastLocation);
         }
     }
 
